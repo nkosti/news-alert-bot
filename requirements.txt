@@ -1,0 +1,4 @@
+feedparser
+flask
+deep-translator
+requests
