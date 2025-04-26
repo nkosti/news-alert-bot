@@ -10,16 +10,31 @@ import threading
 
 # Список RSS-стрічок
 RSS_FEEDS = [
-    "https://www.reutersagency.com/feed/?best-sectors=politics,markets",
-    "https://www.bloomberg.com/feed/podcast/etf-report.xml",
-    "https://www.ft.com/?format=rss",
+    # Політичні новини
+    "https://feeds.washingtonpost.com/rss/politics",
+    "https://rss.cnn.com/rss/cnn_allpolitics.rss",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+    "https://www.theatlantic.com/feed/channel/politics/",
+    "https://thehill.com/rss/syndicator/19110",
+    "https://feeds.feedburner.com/realclearpolitics/qlMj",
+    "https://feeds.npr.org/1014/rss.xml",
     "https://www.politico.com/rss/politics08.xml",
+
+    # Фінансові новини
+    "https://www.ft.com/?format=rss",
     "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-    "https://www.investing.com/rss/news_25.rss"
+    "https://www.marketwatch.com/rss",
+    "https://www.nasdaq.com/feed/rssoutbound",
+    "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+    "https://www.investing.com/rss/news_25.rss",
+    "https://www.bloomberg.com/feed/podcast/etf-report.xml",
+
+    # Truth Social – пости Трампа
+    "https://trumpstruth.org/feed"
 ]
 
 # Ключові слова для фільтрації
-KEYWORDS = ["Trump", "NVO", "S&P 500", "stock market", "AMD", "GOOG", "GOOGL", "INTC", "MSFT", "NVO", "PEP", "SMR", "TLT", "U.UN"]
+KEYWORDS = ["Trump", "NVO", "S&P 500", "stock market", "AMD", "GOOG", "GOOGL", "INTC", "MSFT", "NVO", "PEP", "SMR", "TLT", "U.UN", "OXY"]
 
 # Дані для надсилання листа
 SMTP_SERVER = "smtp.gmail.com"
